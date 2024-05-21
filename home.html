@@ -1,0 +1,585 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+</head>
+<body>
+  
+   
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="home.html" id="logo"><span>T</span>ravel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ts">Tourist Spot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#s">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#h">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search" id="searchInput">
+          
+          <button class="btn btn-primary" type="button">Search</button>
+          
+        </form>
+       
+      </div>
+    </div>
+  </nav>
+  
+   
+    <div class="home">
+      <video autoplay muted loop id="bgVideo">
+        <source src="k/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        <div class="content">
+            <h5><span>Travel </span>Tips</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p><span>Welcome to  Pangasinan!</span> Explore our beautiful beaches, rich history, and vibrant culture.</p>
+            <a href="#ts">Explore Now</a>
+        </div>
+    </div>
+   
+    <br id="ts">
+<br >
+   
+    <section class="packages" >
+      <div class="container">
+        
+        <div class="main-txt">
+          <h1><span>T</span>ourist <span>S</span>pot</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="k/1.jpg" alt="">
+              <div class="card-body">
+                <h3> Hundred Islands National Park </h3>
+                <p>The Pangasinan Hundred Island National Park in Alaminos is the top Pangasinan destination for locals and international travelers alike</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <p>
+                  
+                    <i class='fas fa-map-marked-alt' style='font-size:18px'></i> Alaminos-Lucap Road 2404 Alaminos City Ilocos Region · 13 km
+                  
+                </p>
+                <a class="button" href="page1.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="k/2.jpg" alt="">
+              <div class="card-body">
+                <h3> Minor Basilica of Our Lady of the Rosary of Manaoag </h3>
+                <p> Minor Basilica of Our Lady of the Rosary of Manaoag is a significant Roman Catholic church and pilgrimage site.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <p><i class='fas fa-map-marked-alt' style='font-size:18px'></i> Garcia Road 2430 Manaoag Ilocos · 72 km</p>
+                <a class="submit" href="page2.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="k/3.jpg" alt="">
+              <div class="card-body">
+                <h3> Bolo Beach </h3>
+                <p>Bolo Beach, located not far from the famous Hundred Islands National Park in Alaminos City, Pangasinan, is a quiet and out-of-the-way sandy bay area.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <p><i class='fas fa-map-marked-alt' style='font-size:18px'></i> Rh 5 2410 Burgos Ilocos Region · 26 km </p>
+                <a href="page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/4.jpg" alt="">
+              <div class="card-body">
+                <h3>Patar Beach</h3>
+                <p>Patar Beach Bolinao is one of the most beautiful destinations in the Philippines.  The best thing is you can drive there!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i> 102 Patar Road Kuroshara Beach Resort 2406 Bolinao Ilocos Region · 29 km </p>
+                <a href="page4.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/5.jpg.crdownload" alt="">
+              <div class="card-body">
+                <h3>Enchanted Cave</h3>
+                <p>The Enchanted Cave is a natural cave formation located in Bolinao, Pangasinan, Philippines.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i> Patar Rd 2406 Bolinao Ilocos Region · 31 km</p>
+                <a href="page5.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/6.jpg" alt="">
+              <div class="card-body">
+                <h3>Tondol White Sand Beach  </h3>
+                <p>Tondol White Sand Beach in Anda, Pangasinan, Philippines, is a hidden gem that beckons beach lovers.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i>  Tondol 2405 Anda Ilocos Region · 20 km</p>
+                <a href="page6.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/7.jpg" alt="">
+              <div class="card-body">
+                <h3>Lingayen Beach </h3>
+                <p>Lingayen Beach, located in the capital of Pangasinan, is an exquisite public beach with a long stretch of fine grey sand.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i> Lingayen, Ilocos Region</p>
+                <a href="page7.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/8.jpg" alt="">
+              <div class="card-body">
+                <h3>Bolinao Falls </h3>
+                <p>Bolinao Falls in Pangasinan, Philippines is a hidden gem nestled deep within the lush forests of Bolinao. It’s a mesmerizing waterfall that deserves a spot on your bucket list!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i> Brgy.Tupa 2406 Bolinao Ilocos Region · 21 km</p>
+                <a href="page8.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/10.jpg" alt="">
+              <div class="card-body">
+                <h3>Balingasay River
+                </h3>
+                <p> Balingasay River is a seven-kilometer-long river fed by Quibuar Spring, Bolinao Falls, and several other springs and creeks1</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i> Balingasay, Bolinao, Ilocos Region</p>
+                <a href="page9.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/9.jpg" alt="">
+              <div class="card-body">
+                <h3> Tayug Sunflower Eco Park </h3>
+                <p>The Tayug Sunflower Eco Park in Tayug, Pangasinan is a delightful haven for flower enthusiasts. </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i>
+                Tayug, Ilocos Region, Philippines</p>
+                <a href="page10.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/12.jpg" alt="">
+              <div class="card-body">
+                <h3>Cape Bolinao Lighthouse </h3>
+                <p>The Cape Bolinao Lighthouse is a historic lighthouse located in Bolinao, Pangasinan, Philippines. It was built in 1905 by a trio of American, British, and Filipino engineers. Situated at an elevation of 107 meters (351 ft) above sea level, it is the second highest lighthouse in the Philippines,</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i>
+                Cape Beach Rd 2406 Bolinao Ilocos Region · 31 km</p>
+                <a href="page11.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="k/11.jpg" alt="">
+              <div class="card-body">
+                <h3>Our Farm Republic 
+                </h3>
+                <p>Our Farm Republic is an integrated, diversified, organic farm located in Mangatarem, Pangasinan, Philippines. This beautiful farm promotes agri-tourism and organic agriculture.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star checked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                  <i class="fa-solid fa-star unchecked" onclick="toggleStar(this)"></i>
+                </div>
+                <i class='fas fa-map-marked-alt' style='font-size:18px'></i>
+                Torre 2nd, Mangatarem - Urbiztondo Rd, Mangatarem, Pangasinan, Philippines · 51 km</p>
+                <a href="page12.html">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+
+
+
+
+    <br id="s">
+    <br >
+
+ 
+    <section class="services" id="">
+      <div class="container">
+    
+        <div class="main-txt">
+          <h1><span>Explore</span> More</h1>
+        </div>
+    
+        <div class="row" style="margin-top: 30px;">
+    
+          <div class="col-md-3 py-3">
+    
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Heritage Sites</h3>
+                <a href="vintagesite.html" class="btn">Learn More</a>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-3 py-3">
+    
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Local Food Delicacies</h3>
+                <a href="foods.html" class="btn">Learn More</a>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-3 py-3">
+    
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Cultural Festivals</h3>
+                <a href="festival.html" class="btn">Learn More</a>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-3 py-3">
+    
+            <div class="card">
+              <i class="fas fa-map-marked"></i>
+              <div class="card-body">
+                <h3>Maps</h3>
+                <a href="maps.html" class="btn">Learn More</a>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    </section>
+    
+  
+   
+
+
+
+<br id="h">
+<br>
+<section class="gallary" id="">
+  <div class="container">
+
+      <div class="main-txt">
+          <h1><span>H</span>istory</h1>
+      </div>
+
+      <div class="row" style="margin-top: 50px;">
+
+          
+          <div class="col-md-6 py-3 py-md-0">
+              
+              <h2>Pangasinan's History</h2>
+              <h5>Pangasinan’s colorful history dates back to 1571 when it was officially conquered and colonized by D. Martin de Goiti. It was on April 5, 1572, when it was made an encomienda, an institution where groups of indigenous people were legally entrusted to a Spanish conqueror with the duty of paying him labor or tribute.</h5>
+              <p>Fast-forward to 1580, Pangasinan became a political entity with an “alkalde mayor” leading the province’s affairs. However, the most crucial milestone in its history was April 5, 1580, recognized as Pangasinan’s official founding day.</p>
+              <a href="history.html"><button id="about-btn">Read More...</button></a>
+          </div>
+          <div class="col-md-6 py-3 py-md-0">
+            
+            <div class="card">
+                <img src="/k/his.jpeg" alt="">
+            </div>
+        </div>
+
+      </div>
+
+  </div>
+</section>
+
+
+ <section class="services" id="">
+  <div class="container">
+
+    
+
+    <div class="row justify-content-center" style="margin-top: 30px;">
+
+      <div class="col-md-3 py-3">
+
+        <div class="card">
+          <i class="	fas fa-user-friends"></i>
+          <div class="card-body">
+            <h3>Goverment Official</h3>
+            <a href="official.html " class="btn">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-3 py-3">
+
+        <div class="card">
+          <i class="far fa-edit"></i>
+          <div class="card-body">
+            <h3>Latest<br>News</h3>
+            <a href="news.html" class="btn">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+      
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+   
+    <section class="about" id="about">
+      <div class="container">
+        <div class="main-txt">
+          <h1>About <span>Us</span></h1>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              
+              <img src="/k/au.jpg" alt=""  class="imgabout" style="width: 125%; ">
+             
+            </div>
+          </div>
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>About Travel <span>Tips</span></h2>
+            <p>Welcome to TipsTravel, your ultimate guide to travel tips and inspiration!</p>
+            <p>Discover the beauty and charm of Pangasinan through TipsTravel, your ultimate resource for exploring this wonderful province in the Philippines.</p>
+            <p>Whether you're interested in beach getaways, culinary delights, historical sites, or eco-tourism adventures, we've got you covered with insider tips and recommendations.</p>
+            <h2>Our Team</h2>
+            <p>Meet the dedicated team behind TipsTravel:</p>
+            <ul>
+                
+                <li><strong>John Carl Gumera</strong> -Travel Enthusiasts</li>
+                <li><strong>Rygean Prado </strong> - Trip Planner</li>
+                <li><strong>Myrick Noel B. Clemente</strong> - Developer </li>
+            </ul>
+            <p>Join us on this exciting journey and let's explore the world together!</p>
+            <a href="team.html"><button id="about-btn">Read More...</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+
+
+
+
+
+
+
+
+   
+    <footer id="footer">
+      <h1><span>T</span>ravel</h1>
+      <p>2024 Province of Pangasinan. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://twitter.com/PangasinanUPD"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/ProvinceOfPangasinanOfficial/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/provinceofpangasinan/"><i class="fa-brands fa-instagram"></i></a>
+     
+        <a href="https://www.pangasinan.gov.ph/"><i class="material-icons">important_devices</i></a>
+      </div>
+      
+     
+    </footer>
+ 
+    <script>
+     function toggleStar(starElement) {
+  if (starElement.classList.contains('unchecked')) {
+    starElement.classList.remove('unchecked');
+    starElement.classList.add('checked-half');
+  } else if (starElement.classList.contains('checked-half')) {
+    starElement.classList.remove('checked-half');
+    starElement.classList.add('checked');
+  } else if (starElement.classList.contains('checked')) {
+    starElement.classList.remove('checked');
+    starElement.classList.add('unchecked');
+  }
+}
+
+  </script>
+
+
+
+
+
+
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+
+
+</body>
+</html>

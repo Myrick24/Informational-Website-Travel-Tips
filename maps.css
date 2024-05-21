@@ -1,0 +1,218 @@
+.icon{
+    color: orange;
+    margin:20px
+   
+}
+.icon:hover{
+    color: rgb(81, 69, 2);
+   
+}
+body {
+    background-image: url('mp/hist.png'); /* Specify the path to your image */
+    background-size: 300vh 65vh; /* Set width to auto and height to 50vh (half of viewport height) */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center top; /* Center the background image horizontally and clip from the top */
+    font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+    height: 100vh; /* Set the height of the body to full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+   z-index: -1;
+}
+.img{
+    width: 50%;
+            height: 300px;
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top:150px;
+            
+
+}
+.container div {
+    width: 40%; 
+}
+h1{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 2.5);
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 2.5);
+    font-size: 50px;
+}
+span{
+    color: orange;
+}
+.card-title{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 2.5);
+    text-align: center;
+    color:  orange;
+    font-size: 18px;
+}
+.container1{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.card{
+margin-top: 30px;
+}
+
+
+/* Add this CSS code to your existing CSS file or inside <style> tags in the head section */
+
+.card {
+    position: relative; /* Ensure position context for absolute positioning of overlay */
+    overflow: hidden; /* Hide overflow content outside card */
+}
+
+.card-img {
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.card:hover .card-img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: #fff; /* Text color for overlay */
+    padding: 10px; /* Padding for overlay content */
+    transition: opacity 0.3s ease; /* Smooth transition on hover */
+    opacity: 0; /* Initially hide the overlay */
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+.location{
+    color: orange;
+    transition: 0.5s;
+}
+.location:hover{
+    transform: scale(1.1);
+}
+/* Footer End */
+
+@media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .container {
+      padding: 10px;
+    }
+    .icon {
+        width: 20vw; /* Adjust icon size for smaller screens */
+    }
+    /* Reduce font size for headings */
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+    .table th,
+  .table td {
+    padding: 6px; /* Reduce padding for smaller screens */
+  }
+  
+  }
+  
+  /* Media query for even smaller screens */
+  @media (max-width: 576px) {
+    /* Adjust padding for smaller screens */
+    .container {
+      padding: 5px;
+    }
+    .icon {
+        width: 30vw; /* Further adjust icon size for very small screens */
+    }
+    /* Reduce font size for headings further */
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    /* Reduce iframe height for smaller screens */
+    iframe {
+      height: 100px;
+    }
+    .table th,
+  .table td {
+    padding: 4px; /* Further reduce padding for very small screens */
+  }
+  }
+
+  @media (max-width: 101px){
+    .table th,
+    .table td {
+      padding: 1px; /* Further reduce padding for very small screens */
+    }
+    iframe {
+        height: 100px;
+      }
+  }
+  @media (max-width: 101px){
+    .table th,
+    .table td {
+      padding: 0.5px; /* Further reduce padding for very small screens */
+    }
+   
+  }
+  @media (max-width: 768px) {
+    body {
+        background-size: 100vw auto; /* Set background size to cover full width and auto height */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    body {
+        background-size: 100vw 50vh; /* Set background size to cover full width and half of viewport height */
+    }
+}
+
+@media (min-width: 1201px) {
+    body {
+        background-size: 100vw 65vh; /* Set background size to cover full width and 65% of viewport height */
+    }
+}
+

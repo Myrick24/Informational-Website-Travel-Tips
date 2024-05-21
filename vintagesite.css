@@ -1,0 +1,134 @@
+.icon{
+    color: orange;
+    margin:20px
+   
+}
+.icon:hover{
+    color: rgb(81, 69, 2);
+   
+}
+body {
+    background-image: url('k/ch.jpg'); 
+    background-size: 205vh 60vh; 
+    background-repeat: no-repeat; 
+    background-position: center top;
+    font-family: 'Times New Roman', sans-serif; 
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+   z-index: -1;
+}
+.h{
+    color: white;
+    margin: 220px 0 0 60px;
+    font-size: 100px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 2.5);
+}
+span{
+    color: orange;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.custom-row-margin {
+    margin-left: 15px;  
+    margin-right: 15px; 
+}
+.custom-row-margin3 {
+    margin-left: 100px;  
+    margin-right:100px; 
+}
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; 
+}
+.card {
+    height: 100%;
+}
+
+.card-body {
+    height: 100%; 
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px; 
+}
+
+.card-title {
+    min-height: 50px;
+}
+img{
+    border-radius: 20px;
+}
+@media (max-width: 1200px) {
+    .h {
+        font-size: 80px;
+        margin: 150px 0 0 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .h {
+        font-size: 60px;
+        margin: 100px 0 0 20px;
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .h {
+        font-size: 40px;
+        margin: 80px 0 0 10px;
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .h {
+        font-size: 30px;
+        margin: 50px 0 0 5px;
+        padding: 5px;
+    }
+}

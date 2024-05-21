@@ -1,0 +1,151 @@
+.icon{
+    color: orange;
+    margin:20px
+   
+}
+.icon:hover{
+    color: rgb(81, 69, 2);
+   
+}
+body {
+    background-image: url('k/hist.png'); 
+    background-size: 300vh 70vh; 
+    background-repeat: no-repeat;
+    background-position: center top; 
+    font-family: 'Times New Roman', sans-serif; 
+    height: 100vh;
+    margin: 0; 
+    padding: 0;
+   z-index: -1;
+}
+.h{
+    color: white;
+    margin: 260px 0 0 60px;
+    font-size: 100px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 2.5);
+}
+span{
+    color: orange;
+}
+.title{
+    margin-top: 70px;
+}
+.h1{
+    margin-left: 30px;
+    font-size: 80px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 2.5);
+}
+h3{
+    font-size: 45px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 2.5);
+}
+h4{
+   margin-top:100px ;
+
+}
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+.location{
+    color: orange;
+    transition: 0.5s;
+}
+.location:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .h {
+        font-size: 10vw;
+        margin: 10vh 5vw 0 5vw;
+    }
+
+    .h1 {
+        font-size: 8vw;
+        margin-left: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+
+    .icon {
+        font-size: 8vw;
+    }
+
+  
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .h {
+        font-size: 12vw;
+        margin: 20vh 5vw 0 5vw;
+    }
+
+    .h1 {
+        font-size: 10vw;
+        margin-left: 5vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    .icon {
+        font-size: 10vw;
+    }
+
+    
+    img {
+        width: 50%;
+        height: auto;
+    }
+}

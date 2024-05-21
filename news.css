@@ -1,0 +1,138 @@
+.icon{
+    color: orange;
+    margin:20px
+   
+}
+.icon:hover{
+    color: rgb(81, 69, 2);
+}
+.card1{
+    border: black;
+    margin-bottom: -260px;
+}
+.icon2{
+    color: orange;
+    margin:20px
+   
+}
+.h{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 70px 0 0 60px;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 2.5);
+}
+span{
+    text-shadow: 2px 2px 3px rgba(255, 165, 0 2.5);
+    color: orange;
+}
+.row-cols-1 > * {
+    margin-bottom: 0 !important;
+}
+.card-title {
+    background-color: black;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    width: 170px;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%; 
+}
+
+.card:hover {
+    transform: scale(1.03); 
+    box-shadow: 1px 4px 8px rgba(0,0,0,.1); 
+}
+
+
+
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+.location{
+    color: orange;
+    transition: 0.5s;
+}
+.location:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 1200px) {
+    .h {
+        font-size: 60px;
+        margin: 150px 0 0 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .h {
+        font-size: 60px;
+        margin: 100px 0 0 20px;
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .h {
+        font-size: 40px;
+        margin: 80px 0 0 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .h {
+        font-size: 30px;
+        margin: 50px 0 0 5px;
+        padding: 5px; 
+    }
+}
